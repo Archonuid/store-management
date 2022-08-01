@@ -14,15 +14,15 @@ public class Products {
 	Scanner input = new Scanner(System.in);
 
 	
-	public int compareProductObjects(Book b1, Book b2)
+	public int compareProductObjects(Product p1, Product p2)
 	{
 
 		
-		if (b1.productName.equalsIgnoreCase(b2.productName)) {
+		if (p1.productName.equalsIgnoreCase(p2.productName)) {
 
 			
 			System.out.println(
-				"Book of this Name Already Exists.");
+				"Product of this Name Already Exists.");
 			return 0;
 		}
 
@@ -45,14 +45,14 @@ public class Products {
 
 		for (int i = 0; i < count; i++) {
 
-			if (this.compareProductObjects(b, this.theProducts[i])
+			if (this.compareProductObjects(p, this.theProducts[i])
 				== 0)
 				return;
 		}
 
 		if (count < 50) {
 
-			theProducts[count] = b;
+			theProducts[count] = p;
 			count++;
 		}
 		else {
