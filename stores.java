@@ -41,8 +41,8 @@ public class Store {
 
 				// Case
 			case 1:
-				Product b = new Product();
-				ob.addProduct(b);
+				Product p = new Product();
+				ob.addProduct(p);
 				break;
 
 				// Case
@@ -81,7 +81,7 @@ public class Store {
 				// Case
 			case 5:
 				Buyers s = new Buyer();
-				obBuyer.addBuyer(s);
+				obBuyer.addBuyer(b);
 				break;
 
 				// Case
